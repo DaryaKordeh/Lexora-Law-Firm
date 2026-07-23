@@ -1,0 +1,665 @@
+
+      * {
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Georgia, "Times New Roman", serif;
+
+        background: #f7f5f0;
+
+        color: #202020;
+
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+
+        color: inherit;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      /* =========================
+
+
+           HEADER
+
+
+        ========================== */
+
+      header {
+        background: #171717;
+
+        color: white;
+
+        padding: 20px 7%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        position: sticky;
+
+        top: 0;
+
+        z-index: 100;
+      }
+
+      .logo {
+        font-size: 25px;
+
+        font-weight: bold;
+
+        letter-spacing: 2px;
+      }
+
+      .logo span {
+        color: #c7a86b;
+      }
+
+      nav ul {
+        display: flex;
+
+        gap: 35px;
+      }
+
+      nav a {
+        font-family: Arial, sans-serif;
+
+        font-size: 14px;
+
+        color: #ddd;
+
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #c7a86b;
+      }
+
+      .header-btn {
+        border: 1px solid #c7a86b;
+
+        padding: 10px 20px;
+
+        color: #c7a86b;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 13px;
+
+        transition: 0.3s;
+      }
+
+      .header-btn:hover {
+        background: #c7a86b;
+
+        color: #171717;
+      }
+
+      /* =========================
+
+
+           HERO
+
+
+        ========================== */
+
+      .hero {
+        min-height: 90vh;
+
+        background:
+          linear-gradient(rgba(20, 20, 20, 0.72), rgba(20, 20, 20, 0.72)),
+          url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80")
+            center / cover;
+
+        display: flex;
+
+        align-items: center;
+
+        padding: 80px 7%;
+
+        color: white;
+      }
+
+      .hero-content {
+        max-width: 750px;
+      }
+
+      .hero-subtitle {
+        color: #c7a86b;
+
+        text-transform: uppercase;
+
+        letter-spacing: 4px;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 13px;
+
+        margin-bottom: 20px;
+      }
+
+      .hero h1 {
+        font-size: clamp(45px, 7vw, 82px);
+
+        line-height: 1.05;
+
+        margin-bottom: 25px;
+
+        font-weight: normal;
+      }
+
+      .hero p {
+        max-width: 600px;
+
+        font-family: Arial, sans-serif;
+
+        color: #ddd;
+
+        font-size: 17px;
+
+        margin-bottom: 35px;
+      }
+
+      .hero-buttons {
+        display: flex;
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+
+        padding: 14px 28px;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 14px;
+
+        transition: 0.3s;
+      }
+
+      .btn-primary {
+        background: #c7a86b;
+
+        color: #171717;
+      }
+
+      .btn-primary:hover {
+        background: #e0c58b;
+      }
+
+      .btn-outline {
+        border: 1px solid white;
+
+        color: white;
+      }
+
+      .btn-outline:hover {
+        background: white;
+
+        color: #171717;
+      }
+
+      /* =========================
+
+
+           GENERAL
+
+
+        ========================== */
+
+      section {
+        padding: 100px 7%;
+      }
+
+      .section-title {
+        max-width: 650px;
+
+        margin-bottom: 60px;
+      }
+
+      .section-label {
+        color: #a1834d;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 12px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 15px;
+      }
+
+      .section-title h2 {
+        font-size: 48px;
+
+        font-weight: normal;
+
+        line-height: 1.2;
+      }
+
+    
+
+      .services {
+        background: #f7f5f0;
+      }
+
+      .services-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 25px;
+      }
+
+      .service-card {
+        background: white;
+
+        padding: 40px 35px;
+
+        border: 1px solid #e5e1d9;
+
+        transition: 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-8px);
+
+        border-color: #c7a86b;
+      }
+
+      .service-number {
+        color: #c7a86b;
+
+        font-size: 18px;
+
+        margin-bottom: 25px;
+      }
+
+      .service-card h3 {
+        font-size: 25px;
+
+        margin-bottom: 15px;
+
+        font-weight: normal;
+      }
+
+      .service-card p {
+        font-family: Arial, sans-serif;
+
+        font-size: 14px;
+
+        color: #666;
+      }
+
+      /* =========================
+
+
+           ABOUT
+
+
+        ========================== */
+
+      .about {
+        background: #1c1c1c;
+
+        color: white;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 80px;
+
+        align-items: center;
+      }
+
+      .about-image {
+        height: 550px;
+
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url("https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1000&q=80")
+            center / cover;
+      }
+
+      .about-content .section-title {
+        margin-bottom: 25px;
+      }
+
+      .about-content .section-title h2 {
+        color: white;
+      }
+
+      .about-text {
+        font-family: Arial, sans-serif;
+
+        color: #bbb;
+
+        font-size: 15px;
+
+        margin-bottom: 30px;
+      }
+
+      .about-list {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 14px;
+      }
+
+      .about-list li::before {
+        content: "✓";
+
+        color: #c7a86b;
+
+        margin-right: 10px;
+      }
+
+      /* =========================
+
+
+           STATS
+
+
+        ========================== */
+
+      .stats {
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        background: #c7a86b;
+
+        padding: 55px 7%;
+      }
+
+      .stat {
+        text-align: center;
+
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      .stat:last-child {
+        border-right: none;
+      }
+
+      .stat h3 {
+        font-size: 42px;
+
+        font-weight: normal;
+      }
+
+      .stat p {
+        font-family: Arial, sans-serif;
+
+        font-size: 13px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+      }
+
+      /* =========================
+
+
+           TESTIMONIALS
+
+
+        ========================== */
+
+      .testimonials {
+        text-align: center;
+      }
+
+      .testimonial-box {
+        max-width: 800px;
+
+        margin: auto;
+      }
+
+      .quote {
+        font-size: 28px;
+
+        line-height: 1.5;
+
+        font-style: italic;
+
+        margin-bottom: 25px;
+      }
+
+      .client {
+        color: #a1834d;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 13px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 2px;
+      }
+
+      /* =========================
+
+
+           CTA
+
+
+        ========================== */
+
+      .cta {
+        background: #171717;
+
+        color: white;
+
+        text-align: center;
+      }
+
+      .cta h2 {
+        font-size: 52px;
+
+        font-weight: normal;
+
+        margin-bottom: 20px;
+      }
+
+      .cta p {
+        font-family: Arial, sans-serif;
+
+        color: #aaa;
+
+        max-width: 600px;
+
+        margin: 0 auto 30px;
+      }
+
+      /* =========================
+
+
+           FOOTER
+
+
+        ========================== */
+
+      footer {
+        background: #101010;
+
+        color: #aaa;
+
+        padding: 50px 7% 25px;
+
+        font-family: Arial, sans-serif;
+      }
+
+      .footer-grid {
+        display: grid;
+
+        grid-template-columns: 2fr 1fr 1fr;
+
+        gap: 50px;
+
+        margin-bottom: 40px;
+      }
+
+      .footer-logo {
+        color: white;
+
+        font-family: Georgia, serif;
+
+        font-size: 24px;
+
+        margin-bottom: 15px;
+      }
+
+      footer h4 {
+        color: white;
+
+        margin-bottom: 15px;
+      }
+
+      footer p,
+      footer li {
+        font-size: 13px;
+
+        margin-bottom: 8px;
+      }
+
+      .copyright {
+        border-top: 1px solid #333;
+
+        padding-top: 20px;
+
+        font-size: 12px;
+
+        text-align: center;
+      }
+
+      /* =========================
+
+
+           RESPONSIVE
+
+
+        ========================== */
+
+      @media (max-width: 900px) {
+        nav {
+          display: none;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .about {
+          grid-template-columns: 1fr;
+
+          gap: 40px;
+        }
+
+        .about-image {
+          height: 450px;
+        }
+
+        .stats {
+          grid-template-columns: 1fr 1fr;
+
+          gap: 30px;
+        }
+
+        .stat:nth-child(2) {
+          border-right: none;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 600px) {
+        header {
+          padding: 18px 5%;
+        }
+
+        .header-btn {
+          display: none;
+        }
+
+        section {
+          padding: 70px 5%;
+        }
+
+        .hero {
+          padding: 60px 5%;
+
+          min-height: 80vh;
+        }
+
+        .hero h1 {
+          font-size: 48px;
+        }
+
+        .hero p {
+          font-size: 15px;
+        }
+
+        .section-title h2 {
+          font-size: 38px;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .about-list {
+          grid-template-columns: 1fr;
+        }
+
+        .stats {
+          grid-template-columns: 1fr 1fr;
+
+          padding: 45px 5%;
+        }
+
+        .stat {
+          border-right: none;
+        }
+
+        .stat h3 {
+          font-size: 32px;
+        }
+
+        .cta h2 {
+          font-size: 40px;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+      }

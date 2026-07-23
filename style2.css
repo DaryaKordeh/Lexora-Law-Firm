@@ -1,0 +1,755 @@
+
+      * {
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Georgia, "Times New Roman", serif;
+
+        background: #f7f5f0;
+
+        color: #202020;
+
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+
+        color: inherit;
+      }
+
+      /* =========================
+
+
+           HEADER
+
+
+        ========================== */
+
+      header {
+        background: #171717;
+
+        color: white;
+
+        padding: 20px 7%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        position: sticky;
+
+        top: 0;
+
+        z-index: 100;
+      }
+
+      .logo {
+        font-size: 25px;
+
+        font-weight: bold;
+
+        letter-spacing: 2px;
+      }
+
+      .logo span {
+        color: #c7a86b;
+      }
+
+      nav ul {
+        display: flex;
+
+        gap: 35px;
+
+        list-style: none;
+      }
+
+      nav a {
+        font-family: Arial, sans-serif;
+
+        font-size: 14px;
+
+        color: #ddd;
+
+        transition: 0.3s;
+      }
+
+      nav a:hover,
+      nav a.active {
+        color: #c7a86b;
+      }
+
+      .header-btn {
+        border: 1px solid #c7a86b;
+
+        padding: 10px 20px;
+
+        color: #c7a86b;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 13px;
+
+        transition: 0.3s;
+      }
+
+      .header-btn:hover {
+        background: #c7a86b;
+
+        color: #171717;
+      }
+
+      /* =========================
+
+
+           HERO
+
+
+        ========================== */
+
+      .page-hero {
+        min-height: 65vh;
+
+        background:
+          linear-gradient(rgba(20, 20, 20, 0.75), rgba(20, 20, 20, 0.75)),
+          url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1800&q=80")
+            center / cover;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        color: white;
+
+        padding: 80px 7%;
+      }
+
+      .hero-content {
+        max-width: 850px;
+      }
+
+      .hero-label {
+        color: #c7a86b;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 13px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 4px;
+
+        margin-bottom: 20px;
+      }
+
+      .page-hero h1 {
+        font-size: clamp(50px, 7vw, 80px);
+
+        font-weight: normal;
+
+        line-height: 1.1;
+
+        margin-bottom: 25px;
+      }
+
+      .page-hero p {
+        max-width: 650px;
+
+        margin: auto;
+
+        color: #ddd;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 16px;
+      }
+
+      /* =========================
+
+
+           INTRODUCTION
+
+
+        ========================== */
+
+      .intro {
+        padding: 110px 7%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 80px;
+
+        align-items: center;
+      }
+
+      .intro-image {
+        min-height: 600px;
+
+        background: url("https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1000&q=80")
+          center / cover;
+      }
+
+      .section-label {
+        color: #a1834d;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 12px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 15px;
+      }
+
+      .intro-content h2 {
+        font-size: 48px;
+
+        font-weight: normal;
+
+        line-height: 1.2;
+
+        margin-bottom: 25px;
+      }
+
+      .intro-content p {
+        font-family: Arial, sans-serif;
+
+        color: #666;
+
+        font-size: 15px;
+
+        margin-bottom: 20px;
+      }
+
+      .signature {
+        margin-top: 35px;
+
+        font-family: Georgia, serif;
+
+        font-size: 25px;
+
+        font-style: italic;
+
+        color: #a1834d;
+      }
+
+      .signature span {
+        display: block;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 12px;
+
+        font-style: normal;
+
+        color: #777;
+
+        margin-top: 5px;
+      }
+
+      /* =========================
+
+
+           VALUES
+
+
+        ========================== */
+
+      .values {
+        background: #1c1c1c;
+
+        color: white;
+
+        padding: 100px 7%;
+      }
+
+      .values-header {
+        max-width: 700px;
+
+        margin-bottom: 60px;
+      }
+
+      .values-header h2 {
+        font-size: 48px;
+
+        font-weight: normal;
+
+        line-height: 1.2;
+      }
+
+      .values-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 25px;
+      }
+
+      .value-card {
+        border: 1px solid #3a3a3a;
+
+        padding: 45px 35px;
+
+        transition: 0.3s;
+      }
+
+      .value-card:hover {
+        border-color: #c7a86b;
+
+        transform: translateY(-7px);
+      }
+
+      .value-number {
+        color: #c7a86b;
+
+        font-size: 18px;
+
+        margin-bottom: 25px;
+      }
+
+      .value-card h3 {
+        font-size: 26px;
+
+        font-weight: normal;
+
+        margin-bottom: 15px;
+      }
+
+      .value-card p {
+        color: #aaa;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 14px;
+      }
+
+      /* =========================
+
+
+           MISSION
+
+
+        ========================== */
+
+      .mission {
+        padding: 110px 7%;
+
+        text-align: center;
+      }
+
+      .mission-content {
+        max-width: 900px;
+
+        margin: auto;
+      }
+
+      .mission h2 {
+        font-size: 50px;
+
+        font-weight: normal;
+
+        line-height: 1.25;
+
+        margin-bottom: 30px;
+      }
+
+      .mission p {
+        font-family: Arial, sans-serif;
+
+        font-size: 16px;
+
+        color: #666;
+      }
+
+      /* =========================
+
+
+           TEAM
+
+
+        ========================== */
+
+      .team {
+        padding: 100px 7%;
+
+        background: #ebe8e1;
+      }
+
+      .team-header {
+        text-align: center;
+
+        max-width: 700px;
+
+        margin: 0 auto 60px;
+      }
+
+      .team-header h2 {
+        font-size: 48px;
+
+        font-weight: normal;
+      }
+
+      .team-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 25px;
+      }
+
+      .team-card {
+        background: white;
+      }
+
+      .team-image {
+        height: 400px;
+
+        background-position: center;
+
+        background-size: cover;
+      }
+
+      .lawyer-one {
+        background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80");
+      }
+
+      .lawyer-two {
+        background-image: url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80");
+      }
+
+      .lawyer-three {
+        background-image: url("https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80");
+      }
+
+      .team-info {
+        padding: 25px;
+      }
+
+      .team-info h3 {
+        font-size: 24px;
+
+        font-weight: normal;
+
+        margin-bottom: 5px;
+      }
+
+      .team-info span {
+        color: #a1834d;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 12px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+      }
+
+      /* =========================
+
+
+           NUMBERS
+
+
+        ========================== */
+
+      .numbers {
+        background: #c7a86b;
+
+        padding: 60px 7%;
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .number-item {
+        text-align: center;
+
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      .number-item:last-child {
+        border-right: none;
+      }
+
+      .number-item h3 {
+        font-size: 42px;
+
+        font-weight: normal;
+      }
+
+      .number-item p {
+        font-family: Arial, sans-serif;
+
+        font-size: 12px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+      }
+
+      /* =========================
+
+
+           CTA
+
+
+        ========================== */
+
+      .cta {
+        background: #171717;
+
+        color: white;
+
+        text-align: center;
+
+        padding: 100px 7%;
+      }
+
+      .cta h2 {
+        font-size: 52px;
+
+        font-weight: normal;
+
+        margin-bottom: 20px;
+      }
+
+      .cta p {
+        max-width: 600px;
+
+        margin: 0 auto 30px;
+
+        color: #aaa;
+
+        font-family: Arial, sans-serif;
+      }
+
+      .cta-button {
+        display: inline-block;
+
+        background: #c7a86b;
+
+        color: #171717;
+
+        padding: 15px 30px;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 14px;
+
+        transition: 0.3s;
+      }
+
+      .cta-button:hover {
+        background: #e0c58b;
+      }
+
+      /* =========================
+
+
+           FOOTER
+
+
+        ========================== */
+
+      footer {
+        background: #101010;
+
+        color: #aaa;
+
+        padding: 50px 7% 25px;
+
+        font-family: Arial, sans-serif;
+      }
+
+      .footer-grid {
+        display: grid;
+
+        grid-template-columns: 2fr 1fr 1fr;
+
+        gap: 50px;
+
+        margin-bottom: 40px;
+      }
+
+      .footer-logo {
+        color: white;
+
+        font-family: Georgia, serif;
+
+        font-size: 24px;
+
+        margin-bottom: 15px;
+      }
+
+      footer h4 {
+        color: white;
+
+        margin-bottom: 15px;
+      }
+
+      footer p {
+        font-size: 13px;
+
+        margin-bottom: 8px;
+      }
+
+      .copyright {
+        border-top: 1px solid #333;
+
+        padding-top: 20px;
+
+        font-size: 12px;
+
+        text-align: center;
+      }
+
+      /* =========================
+
+
+           RESPONSIVE
+
+
+        ========================== */
+
+      @media (max-width: 900px) {
+        nav {
+          display: none;
+        }
+
+        .intro {
+          grid-template-columns: 1fr;
+        }
+
+        .intro-image {
+          min-height: 450px;
+        }
+
+        .values-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .team-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .numbers {
+          grid-template-columns: 1fr 1fr;
+
+          gap: 30px;
+        }
+
+        .number-item {
+          border-right: none;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 600px) {
+        header {
+          padding: 18px 5%;
+        }
+
+        .header-btn {
+          display: none;
+        }
+
+        .page-hero {
+          min-height: 60vh;
+
+          padding: 60px 5%;
+        }
+
+        .page-hero h1 {
+          font-size: 50px;
+        }
+
+        .intro {
+          padding: 70px 5%;
+
+          gap: 40px;
+        }
+
+        .intro-content h2 {
+          font-size: 38px;
+        }
+
+        .intro-image {
+          min-height: 400px;
+        }
+
+        .values {
+          padding: 70px 5%;
+        }
+
+        .values-header h2 {
+          font-size: 38px;
+        }
+
+        .values-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mission {
+          padding: 70px 5%;
+        }
+
+        .mission h2 {
+          font-size: 38px;
+        }
+
+        .team {
+          padding: 70px 5%;
+        }
+
+        .team-header h2 {
+          font-size: 38px;
+        }
+
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .numbers {
+          padding: 50px 5%;
+        }
+
+        .number-item h3 {
+          font-size: 32px;
+        }
+
+        .cta {
+          padding: 70px 5%;
+        }
+
+        .cta h2 {
+          font-size: 40px;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
